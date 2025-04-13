@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Piyush Mahawar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Certifications Specific Styles */
+        .certifications-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .certification-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .certification-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .certification-image {
+            height: 200px;
+            overflow: hidden;
+            border-bottom: 1px solid #eee;
+        }
+
+        .certification-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .certification-content {
+            padding: 25px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .certification-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+
+        .certification-issuer {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .certification-date {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .certification-description {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        .certification-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .certification-link:hover {
+            background-color: var(--dark-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">PM</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="experience.html">Experience</a>
+                <a href="certifications.html" class="active">Certifications</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Certifications Section -->
+    <section class="certifications">
+        <div class="container">
+            <h2 class="section-title">My Certifications</h2>
+            <div class="certifications-container">
+                <!-- Certification 1 -->
+                <div class="certification-card">
+                    <div class="certification-image">
+                        <img src="images/google-cert.jpg" alt="Google Data Analytics Certification">
+                    </div>
+                    <div class="certification-content">
+                        <h3 class="certification-title">Google Data Analytics Professional Certificate</h3>
+                        <div class="certification-issuer">Google</div>
+                        <div class="certification-date">Issued 2024</div>
+                        <p class="certification-description">
+                            Comprehensive program covering data cleaning, analysis, visualization, and tools like SQL, R, and Tableau.
+                        </p>
+                        <a href="#" class="certification-link">View Credential</a>
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="certification-card">
+                    <div class="certification-image">
+                        <img src="images/oracle-ai.jpg" alt="Oracle AI Certification">
+                    </div>
+                    <div class="certification-content">
+                        <h3 class="certification-title">Oracle Cloud Generative AI Professional</h3>
+                        <div class="certification-issuer">Oracle</div>
+                        <div class="certification-date">Issued 2024</div>
+                        <p class="certification-description">
+                            Certification in generative AI applications using Oracle Cloud Infrastructure.
+                        </p>
+                        <a href="#" class="certification-link">View Credential</a>
+                    </div>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="certification-card">
+                    <div class="certification-image">
+                        <img src="images/uw-datascience.jpg" alt="Data Science Certification">
+                    </div>
+                    <div class="certification-content">
+                        <h3 class="certification-title">Data Science at Scale Specialization</h3>
+                        <div class="certification-issuer">University of Washington</div>
+                        <div class="certification-date">Issued 2024</div>
+                        <p class="certification-description">
+                            Specialization covering large-scale data analysis, machine learning, and data visualization techniques.
+                        </p>
+                        <a href="#" class="certification-link">View Credential</a>
+                    </div>
+                </div>
+
+                <!-- Certification 4 -->
+                <div class="certification-card">
+                    <div class="certification-image">
+                        <img src="images/tcs-cert.jpg" alt="TCS Certification">
+                    </div>
+                    <div class="certification-content">
+                        <h3 class="certification-title">TCS MasterCraft Data Plus Overview</h3>
+                        <div class="certification-issuer">Tata Consultancy Services</div>
+                        <div class="certification-date">Issued 2024</div>
+                        <p class="certification-description">
+                            Overview of TCS's MasterCraft Data Plus platform for enterprise data management.
+                        </p>
+                        <a href="#" class="certification-link">View Credential</a>
+                    </div>
+                </div>
+
+                <!-- Certification 5 -->
+                <div class="certification-card">
+                    <div class="certification-image">
+                        <img src="images/forage-bcg.jpg" alt="BCG Simulation">
+                    </div>
+                    <div class="certification-content">
+                        <h3 class="certification-title">BCG Data Science Job Simulation</h3>
+                        <div class="certification-issuer">Forage (BCG)</div>
+                        <div class="certification-date">Completed April 2025</div>
+                        <p class="certification-description">
+                            Completed customer churn analysis simulation demonstrating data analytics skills.
+                        </p>
+                        <a href="#" class="certification-link">View Certificate</a>
+                    </div>
+                </div>
+
+                <!-- Certification 6 -->
+                <div class="certification-card">
+                    <div class="certification-image">
+                        <img src="images/forage-ba.jpg" alt="British Airways Simulation">
+                    </div>
+                    <div class="certification-content">
+                        <h3 class="certification-title">British Airways Data Science Simulation</h3>
+                        <div class="certification-issuer">Forage (British Airways)</div>
+                        <div class="certification-date">Completed April 2025</div>
+                        <p class="certification-description">
+                            Data science simulation focused on airline customer data analysis.
+                        </p>
+                        <a href="#" class="certification-link">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Piyush Mahawar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
